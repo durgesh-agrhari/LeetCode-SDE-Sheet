@@ -19,3 +19,18 @@ void merge(vector<pair<int,int>> &intervals)
         cout<<u.first<<" "<<u.second<<endl;
     }
 }
+    
+int main()
+{
+   int n;
+   cin>>n;
+   vector<pair<int,int>> a;
+   for(int i=0;i<n;i++)
+   {
+       int x,y;
+       cin>>x>>y;
+       a.push_back({x,y});
+   }
+   merge(a);
+   return 0;
+}
