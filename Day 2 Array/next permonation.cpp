@@ -26,3 +26,27 @@ int main()
 
 // This code is contributed
 // by Akanksha Rai
+
+
+
+
+// class Solution {
+// public:
+//  void nextPermutation(vector<int>& nums) {
+//         int i=nums.size()-2;  
+//         while(i>=0) {
+//             if(nums[i] < nums[i+1]) {
+//                 for(int j = nums.size()-1; j>i; j--)
+//                     if(nums[i]<nums[j]) {
+//                         int temp = nums[i];
+//                         nums[i] = nums[j];
+//                         nums[j] = temp;
+//                         break;
+//                     }
+//                 break;
+//             }
+//             i--;
+//         }   
+//         sort(nums.begin()+i+1, nums.end());
+//     }
+// };
